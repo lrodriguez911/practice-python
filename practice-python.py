@@ -43,3 +43,23 @@ else:
             print('Three')
         else:
             print('Something else')
+
+
+"""declaracion elif forma simple de hacer if else"""
+
+
+if num == 1:
+    print("One")
+elif num == 2:
+    print("Two")
+elif num == 3: 
+    print("Three")
+else: 
+    print("Something else")
+
+year = 2000
+if year % 4 == 0:
+    if year % 100 == 0:
+    print("Leap year")
+    elif year % 400 == 0:
+        print("")
