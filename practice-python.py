@@ -57,9 +57,9 @@ elif num == 3:
 else: 
     print("Something else")
 
+
 year = 2000
-if year % 4 == 0:
-    if year % 100 == 0:
+if year % 4 == 0 and year % 100 == 0 and year % 400 == 0:
     print("Leap year")
-    elif year % 400 == 0:
-        print("")
+    else:
+        print("Not a leap year")
