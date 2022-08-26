@@ -1,3 +1,4 @@
+from ast import operator
 from re import X
 
 
@@ -68,3 +69,13 @@ if year % 4 == 0:
 else:print("Not a leap year")
     
     
+""" bolean logic operator """
+
+""" operator and """
+print(1 > 0 and 2 > 1)
+
+""" operator or """
+print(1 > 0 or 1 > 2)
+
+""" operator not  """
+print(not 1 > 0)
