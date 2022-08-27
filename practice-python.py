@@ -101,3 +101,18 @@ while x < 10:
     else:
         print(str(x) + " is odd")
     x+=1
+
+
+""" exercises bucle while """
+#tu código va aqui
+points = 100
+i = 0
+while i < 4:
+    x = input()
+    if x == 'hit':
+        points += 10
+    if x == 'miss':
+        points -= 20
+    i+=1
+    
+print(points)
