@@ -94,17 +94,17 @@ print("While finished") """
 
 """ whilw and if else """
 
-x = 1
+""" x = 1
 while x < 10:
     if x % 2 == 0:
         print(str(x) + " is Even")
     else:
         print(str(x) + " is odd")
-    x+=1
+    x+=1 """
 
 
 """ exercises bucle while """
-#tu código va aqui
+""" #tu código va aqui
 points = 100
 i = 0
 while i < 4:
@@ -115,4 +115,16 @@ while i < 4:
         points -= 20
     i+=1
     
-print(points)
+print(points) """
+
+
+""" exercises system of entries """
+
+i = 0
+price = 0
+while i <= 4:
+    i+= 1
+    if int(input('ingrese la edad del pasajero ')) <= 3:
+        continue
+    price+=100
+print(price)
