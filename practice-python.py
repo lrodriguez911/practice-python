@@ -120,11 +120,25 @@ print(points) """
 
 """ exercises system of entries """
 
-i = 0
+""" i = 0
 price = 0
 while i <= 4:
     i+= 1
     if int(input('ingrese la edad del pasajero ')) <= 3:
         continue
     price+=100
-print(price)
+print(price) """
+
+
+""" calc of IMC """
+
+weight = int(input('enter your weight '))
+height = float(input('enter your height '))
+imc = float(weight / (height ** 2))
+if imc >= 0 and imc <= 18.4:
+    print('Underweight')
+elif imc >= 18.5 and imc <= 24.9:
+    print('Normal')
+elif imc >= 25 and imc <= 29.9:
+    print('Overweight')
+else:print('Obesity')
