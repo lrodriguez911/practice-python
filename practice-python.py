@@ -132,13 +132,17 @@ print(price) """
 
 """ calc of IMC """
 
-weight = int(input('enter your weight '))
-height = float(input('enter your height '))
-imc = float(weight / (height ** 2))
-if imc >= 0 and imc <= 18.4:
+
+
+weight = int(input())
+height = float(input())
+imc = float(weight  / height ** 2)
+
+if imc <= 18.4:
     print('Underweight')
 elif imc >= 18.5 and imc <= 24.9:
     print('Normal')
 elif imc >= 25 and imc <= 29.9:
     print('Overweight')
-else:print('Obesity')
+elif imc >= 30:
+    print('Obesity')
