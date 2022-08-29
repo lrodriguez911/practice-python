@@ -134,7 +134,7 @@ print(price) """
 
 
 
-weight = int(input())
+""" weight = int(input())
 height = float(input())
 imc = float(weight  / height ** 2)
 
@@ -145,4 +145,57 @@ elif imc >= 18.5 and imc <= 24.9:
 elif imc >= 25 and imc <= 29.9:
     print('Overweight')
 elif imc >= 30:
-    print('Obesity')
+    print('Obesity') """
+
+
+""" lists """
+
+""" m = [0,1,2,3,4]
+print(m[0]) """
+
+""" exercises where is mi site """
+""" seats = [
+['a', 'b', 'c'],
+['d', 'e', 'f'],
+['g', 'h', 'i'],
+['j', 'k', 'l']
+]
+
+
+
+row = int(input())
+column = int(input())
+print(seats[row][column]) """
+
+
+""" using operator 'in' in lists """
+
+""" words = ["spam", "egg", "spam", "sausage"]
+""" print("spam" in words) """
+print("egg" in words)
+print("tomato" in words)
+print("to" in "to") """
+
+""" for word in words:
+    print(word) """
+
+""" str = "testing for loops"
+count = 0
+
+for x in str:
+   if(x == 't'):
+    count += 1
+
+print(count) """
+
+
+""" exercises cart shop discount using for """
+
+""" cart = [15, 42, 120, 9, 5, 380]
+
+discount = int(input())
+total = 0
+for i in cart:
+    total += i-(i*(discount/100))
+
+print(total) """
