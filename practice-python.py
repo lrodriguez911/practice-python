@@ -171,7 +171,7 @@ print(seats[row][column]) """
 """ using operator 'in' in lists """
 
 """ words = ["spam", "egg", "spam", "sausage"]
-""" print("spam" in words) """
+print("spam" in words) 
 print("egg" in words)
 print("tomato" in words)
 print("to" in "to") """
@@ -199,3 +199,37 @@ for i in cart:
     total += i-(i*(discount/100))
 
 print(total) """
+
+
+""" using range  """
+
+""" print(list(range(5))) """
+
+""" for i in list(range(4)):
+    print(i)
+for i in range(4):
+    print(i) """
+
+
+""" slice a list """
+squares = [1,2,3,4,5,6,7,8,9,10]
+print(squares[2:4])
+
+""" no put last character in slicer go to ends list"""
+print(squares[0:]) 
+
+""" the slice begin in start """
+print(squares[:4])
+
+""" using a interval putting a third character """
+
+print(squares[1:5:2])
+
+""" using a negative numbers in slicer """
+print(squares[0:-2])
+
+""" reverse a str unsing slicer third parametrer number negative """
+
+str = str(input())
+
+print(str[::-1])
