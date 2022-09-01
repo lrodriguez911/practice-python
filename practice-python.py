@@ -212,24 +212,37 @@ for i in range(4):
 
 
 """ slice a list """
-squares = [1,2,3,4,5,6,7,8,9,10]
+""" squares = [1,2,3,4,5,6,7,8,9,10]
 print(squares[2:4])
-
+ """
 """ no put last character in slicer go to ends list"""
-print(squares[0:]) 
+""" print(squares[0:])  """
 
 """ the slice begin in start """
-print(squares[:4])
+""" print(squares[:4]) """
 
 """ using a interval putting a third character """
 
-print(squares[1:5:2])
+""" print(squares[1:5:2]) """
 
 """ using a negative numbers in slicer """
-print(squares[0:-2])
-
+""" print(squares[0:-2])
+ """
 """ reverse a str unsing slicer third parametrer number negative """
 
-str = str(input())
+""" str = str(input())
 
-print(str[::-1])
+print(str[::-1]) """
+
+""" calculate the factorial of number """
+""" using a formula to calculate the factorial """
+N = int(input())
+""" print(int((((N+1)-N)+ N)/2 * N))"""
+
+
+""" another method to calculate the factorial """
+T = 0
+for i in range(N):
+    T += i + 1
+    i + 1
+print(T)
