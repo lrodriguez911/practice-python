@@ -236,13 +236,101 @@ print(str[::-1]) """
 
 """ calculate the factorial of number """
 """ using a formula to calculate the factorial """
-N = int(input())
+""" N = int(input()) """
 """ print(int((((N+1)-N)+ N)/2 * N))"""
 
 
 """ another method to calculate the factorial """
-T = 0
+""" T = 0
 for i in range(N):
     T += i + 1
     i + 1
-print(T)
+print(T) """
+
+
+
+""" functions """
+
+
+""" examples about functions """
+
+""" print("Hello world!")
+range(2, 20)
+str(12)
+range(10, 20, 3) """
+
+""" know length of lists using function len"""
+""" str = "hello"
+nums = [1,2,3,4,5,6,7]
+print(len(nums))
+print(len(str)) """
+
+""" append add a element in the final of list """
+""" nums = [0,1,2,3,4,5,6,7,8,9,10] """
+""" nums.append(5) """
+"""print(nums) """
+
+""" insert use to add in list using a index in anywhere of list"""
+""" nums.insert(0,0) """
+""" print(nums) """
+
+
+"using index to find first time appear a element"
+
+""" letters = ['a','b','c','d'] """
+""" print(letters.index('b'))
+print(nums.index(1)) """
+
+
+""" using diferents funcitons: max, min, count, remove, reverse """
+
+""" max(list): Devuelve el valor máximo.
+
+min(list): Devuelve el valor mínimo.
+
+list.count(item): Devuelve un recuento de cuántas veces aparece un elemento en una lista.
+
+list.remove(item): Elimina un elemento de una lista.
+
+list.reverse(): Invierte los elementos de una lista. """
+
+""" nums = [0,1,2,3,4,5,6,7,8,9,10]
+
+print(max(nums))
+
+print(min(nums))
+
+print(nums.count(1))
+
+nums.remove(1).remove(2)
+
+print(nums)
+
+nums.reverse()
+print(nums)
+letters.reverse()
+print(letters) """
+
+""" exercises list's functions """
+
+""" nums = [0,1,2,3,4,5,6,7,8,9,10]
+total = 0
+nums.remove(min(nums))
+nums.remove(max(nums))
+
+for i in nums:
+    total += i
+
+print(total) """
+
+
+""" format of strings """
+
+""" nums = [1,2,3,4]
+msg = "Numbers: {0} {1} {2}". format(nums[0], nums[1], nums[2])
+print(msg)
+
+print("{0}{1}{0}".format("abra","cad")) """
+
+a='{x} {y}'.format(x=12, y=13)
+print(a)
