@@ -354,3 +354,26 @@ print('lower'.lower()) """
 
 """ msg = str(input())
 print(msg.lower()) """
+
+""" using decalration def to declare a function """
+
+def myfunc():
+    print("hi")
+    print("hello")
+    print("Good bye")
+
+myfunc()
+    
+
+def hello():
+    print("hello {a}".format(a=str(input())))
+    
+    
+hello()
+    
+    
+    
+    
+    
+    
+    
