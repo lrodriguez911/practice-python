@@ -357,7 +357,7 @@ print(msg.lower()) """
 
 """ using decalration def to declare a function """
 
-def myfunc():
+""" def myfunc():
     print("hi")
     print("hello")
     print("Good bye")
@@ -369,11 +369,33 @@ def hello():
     print("hello {a}".format(a=str(input())))
     
     
-hello()
+hello() """
     
+
+def print_whit_exclamation(word=str(input())):
+        print(word + '!')
     
+print_whit_exclamation('fizz')
+print_whit_exclamation('buzz')
+print_whit_exclamation()
     
+def print_sum_twice(x=int(input('insert first number to sum ')),y=int(input('insert second number to sum '))):
+    print(x + y)
     
+print_sum_twice()
+
+""" feet to inches converter """
+feet = int(input())
+
+def convert(feet):
+    print(feet * 12)
+
+convert(feet)
+
+
+""" def function to multiply 2 arguments """
+
+def print_mult(x, y):
+    print(x * y)
     
-    
-    
+print_mult(2, 4)
