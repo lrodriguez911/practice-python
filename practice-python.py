@@ -332,5 +332,25 @@ print(msg)
 
 print("{0}{1}{0}".format("abra","cad")) """
 
-a='{x} {y}'.format(x=12, y=13)
-print(a)
+""" a='{x} {y}'.format(x=12, y=13)
+print(a) """
+
+""" print(','.join(['a','b','c']))
+
+print('abcd'.split())
+
+print('azc'.replace('z', 'b'))
+
+print('abc'.startswith('a'))
+
+print('abc'.endswith('c'))
+
+print('upper'.upper())
+
+print('lower'.lower()) """
+
+
+""" exercises screaming test """
+
+""" msg = str(input())
+print(msg.lower()) """
