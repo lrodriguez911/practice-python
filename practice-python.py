@@ -372,7 +372,7 @@ def hello():
 hello() """
     
 
-def print_whit_exclamation(word=str(input())):
+""" def print_whit_exclamation(word=str(input())):
         print(word + '!')
     
 print_whit_exclamation('fizz')
@@ -383,19 +383,62 @@ def print_sum_twice(x=int(input('insert first number to sum ')),y=int(input('ins
     print(x + y)
     
 print_sum_twice()
-
+ """
 """ feet to inches converter """
-feet = int(input())
+""" feet = int(input())
 
 def convert(feet):
     print(feet * 12)
 
 convert(feet)
-
+ """
 
 """ def function to multiply 2 arguments """
 
-def print_mult(x, y):
+""" def print_mult(x, y):
     print(x * y)
-    
-print_mult(2, 4)
+
+print_mult(2, 4) """
+
+""" fucntions to calculate a max number of twice """
+
+""" def max(x , y):
+    if x >= y:
+        return x
+    else:
+        return y
+
+print(max(4, 8))
+
+z = max(5,9)
+print(z) """
+
+""" def shortest_string(x, y):
+    if len(x) <= len(y):
+        return x
+    else:
+        return y """
+        
+""" print(shortest_string('hola', 'buenos dias')) """
+
+""" def add_numbers(x, y ):
+    total = x + y
+    return total
+   
+
+print(add_numbers(4, 4)) """
+
+
+""" counter how many letters have a text """
+
+def letter_count(text, letter):
+    #tu código va aquí
+    count =0
+    for i in text:
+        if i == letter:
+            count += 1
+    return count
+text = input()
+letter = input()
+
+print(letter_count(text, letter))
