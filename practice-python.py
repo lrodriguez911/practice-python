@@ -431,7 +431,7 @@ print(add_numbers(4, 4)) """
 
 """ counter how many letters have a text """
 
-def letter_count(text, letter):
+""" def letter_count(text, letter):
     #tu código va aquí
     count =0
     for i in text:
@@ -442,3 +442,26 @@ text = input()
 letter = input()
 
 print(letter_count(text, letter))
+ """
+
+
+""" practing whit dicconarys it's like object in jscript """
+
+""" ages = {
+    "Lucas" : 30,
+    "FLor" : 29,
+    "Exe": 31
+}
+print(ages.str) """
+
+
+""" exercises car selling """
+
+
+""" car = {
+    'brand' : 'BMW',
+    'year' : 2018,
+    'color': 'red',
+    'mileage' : 15000
+}
+print(car[input()]) """
