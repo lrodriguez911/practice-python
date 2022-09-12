@@ -467,7 +467,7 @@ print(ages.str) """
 print(car[input()]) """
 
 
-nums = {
+""" nums = {
     1: "one",
     2: "two",
     3: "three",
@@ -485,4 +485,24 @@ pairs = {1: "apple",
 
 print(pairs.get("orange"))
 print(pairs.get(7, 42))
-print(pairs.get(12345, "not found"))
+print(pairs.get(12, "not found")) """
+
+""" add exercises about economic liberty in diferents countries """
+""" data = {
+    'Singapore': 1,
+    'Ireland': 6,
+    'United Kingdom': 7,
+    'Germany': 27,
+    'Armenia': 34,
+    'United States': 17,
+    'Canada': 9,
+    'Italy': 74
+}
+print(data.get(input(), "Not found")) """
+
+
+""" tuples in python  """
+
+words = ('spam', 'eggs', 'sausages')
+
+print(words[0])
