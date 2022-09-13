@@ -525,14 +525,8 @@ contacts = [
 def find(str):
     for i in contacts:
         if i[0] == str:
-            print("{name} is {age}".format(name=i[0], age = i[1]))
-    return "Not Found"
+            return print("{name} is {age}".format(name=i[0], age = i[1]))
+    return print("Not Found")
            
-""" return "{name} is ".format(name=str) """
 
-find('Jamess')
-""" print(contacts[contacts.index(inpu)][0]) """
-
-""" for i in contacts:
-        if i[0] == input():
-            print("{name} is {num}".format(name=i[0], num = i[1])) """
+find('Amanda')
