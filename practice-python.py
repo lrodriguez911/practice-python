@@ -503,6 +503,36 @@ print(data.get(input(), "Not found")) """
 
 """ tuples in python  """
 
-words = ('spam', 'eggs', 'sausages')
+""" words = ('spam', 'eggs', 'sausages')
 
 print(words[0])
+
+words[1] = 'jam' """
+
+""" my_tuple = 'one', 'two', 'three'
+
+print(my_tuple[0]) """
+
+
+contacts = [
+    ('James', 42),
+    ('Amy', 24),
+    ('John', 31),
+    ('Amanda', 63),
+    ('Bob', 18)
+]
+
+def find(str):
+    for i in contacts:
+        if i[0] == str:
+            print("{name} is {age}".format(name=i[0], age = i[1]))
+    return "Not Found"
+           
+""" return "{name} is ".format(name=str) """
+
+find('Jamess')
+""" print(contacts[contacts.index(inpu)][0]) """
+
+""" for i in contacts:
+        if i[0] == input():
+            print("{name} is {num}".format(name=i[0], num = i[1])) """
