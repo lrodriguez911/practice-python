@@ -552,12 +552,8 @@ print(d) """
 
 """ add exercises whit tuples """
 
-def calc(x):
-    """ #tu código va aquí """
-    tup = {
-        'perime' : x * 4,
-        'area': x * x
-    }
+""" def calc(x):
+    tup = (x*4, x*x)
     return tup
     
 
@@ -565,4 +561,10 @@ side = int(input())
 p, a = calc(side)
 
 print("Perimeter: " + str(p))
-print("Area: " + str(a))
+print("Area: " + str(a)) """
+
+""" exercises whit conjunt """
+
+num_set = {1, 2, 3, 4, 5}
+
+print(3 in num_set)
