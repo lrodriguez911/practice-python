@@ -514,7 +514,7 @@ words[1] = 'jam' """
 print(my_tuple[0]) """
 
 
-contacts = [
+""" contacts = [
     ('James', 42),
     ('Amy', 24),
     ('John', 31),
@@ -530,3 +530,39 @@ def find(str):
            
 
 find('Amanda')
+ """
+
+""" unpaking tuples and assing """
+
+
+""" numbers = (1, 2, 3)
+a, b, c = numbers
+print(a)
+print(b)
+print(c) """
+
+
+""" using asterisk to take all values  """
+""" a, b, *c, d = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(a)
+print(b)
+print(c)
+print(d) """
+
+
+""" add exercises whit tuples """
+
+def calc(x):
+    """ #tu código va aquí """
+    tup = {
+        'perime' : x * 4,
+        'area': x * x
+    }
+    return tup
+    
+
+side = int(input())
+p, a = calc(side)
+
+print("Perimeter: " + str(p))
+print("Area: " + str(a))
