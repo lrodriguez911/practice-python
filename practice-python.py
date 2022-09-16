@@ -563,8 +563,30 @@ p, a = calc(side)
 print("Perimeter: " + str(p))
 print("Area: " + str(a)) """
 
-""" exercises whit conjunt """
+""" exercises whit sets """
 
-num_set = {1, 2, 3, 4, 5}
+""" num_set = {1, 2, 3, 4, 5}
 
-print(3 in num_set)
+print(3 in num_set) """
+
+""" working whit sets """
+
+nums = {1, 2, 1, 3, 1, 4, 5, 6}
+print(nums)
+
+""" use add to add a element in set """
+nums.add(-7)
+
+""" use remove to remove a element in set """
+nums.remove(3)
+print(nums)
+
+""" combine sets whit maths operators """
+first = {1, 2, 3, 4, 5, 6}
+second = {4, 5, 6, 7, 8, 9}
+
+print(first | second)
+print(first & second)
+print(first - second)
+print(second - first)
+print(first ^ second)
