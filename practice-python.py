@@ -23,7 +23,7 @@ print(x) """
 
 if purity >= 91.7:
     print('Accepted') """
- 
+
 
 """declaracion else"""
 
@@ -68,7 +68,7 @@ if year % 4 == 0:
     else:print("Leap year")
 else:print("Not a leap year")
      """
-    
+
 """ bolean logic operator """
 
 """ operator and """
@@ -131,7 +131,6 @@ print(price) """
 
 
 """ calc of IMC """
-
 
 
 """ weight = int(input())
@@ -246,7 +245,6 @@ for i in range(N):
     T += i + 1
     i + 1
 print(T) """
-
 
 
 """ functions """
@@ -370,7 +368,7 @@ def hello():
     
     
 hello() """
-    
+
 
 """ def print_whit_exclamation(word=str(input())):
         print(word + '!')
@@ -418,7 +416,7 @@ print(z) """
         return x
     else:
         return y """
-        
+
 """ print(shortest_string('hola', 'buenos dias')) """
 
 """ def add_numbers(x, y ):
@@ -571,22 +569,38 @@ print(3 in num_set) """
 
 """ working whit sets """
 
-nums = {1, 2, 1, 3, 1, 4, 5, 6}
-print(nums)
+""" nums = {1, 2, 1, 3, 1, 4, 5, 6}
+print(nums) """
 
 """ use add to add a element in set """
-nums.add(-7)
+""" nums.add(-7) """
 
 """ use remove to remove a element in set """
-nums.remove(3)
-print(nums)
+""" nums.remove(3)
+print(nums) """
 
 """ combine sets whit maths operators """
 first = {1, 2, 3, 4, 5, 6}
 second = {4, 5, 6, 7, 8, 9}
 
+""" El operador unión  | combina dos conjuntos para formar uno nuevo que contenga elementos en cualquiera de ellos.
+El operador intersección & obtiene elementos sólo en ambos.
+El operador diferencia - obtiene elementos en el primer conjunto pero no en el segundo.
+El operador diferencia simétrica  ^ obtiene elementos en cualquiera de los dos conjuntos, pero no en ambos. """
 print(first | second)
 print(first & second)
 print(first - second)
 print(second - first)
 print(first ^ second)
+
+
+""" exercises whit sets """
+
+skills = {'Python', 'HTML', 'SQL', 'C++', 'Java', 'Scala'}
+job_skills = {'HTML', 'CSS', 'JS', 'C#', 'NodeJS'}
+
+def coincid(set1, set2):
+    return print(list(set1 & set2)[len(list(set1 & set2)) - 1])
+
+coincid(skills, job_skills)
+
