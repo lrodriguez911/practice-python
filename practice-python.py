@@ -580,27 +580,36 @@ print(nums) """
 print(nums) """
 
 """ combine sets whit maths operators """
-first = {1, 2, 3, 4, 5, 6}
-second = {4, 5, 6, 7, 8, 9}
+""" first = {1, 2, 3, 4, 5, 6}
+second = {4, 5, 6, 7, 8, 9} """
 
 """ El operador unión  | combina dos conjuntos para formar uno nuevo que contenga elementos en cualquiera de ellos.
 El operador intersección & obtiene elementos sólo en ambos.
 El operador diferencia - obtiene elementos en el primer conjunto pero no en el segundo.
 El operador diferencia simétrica  ^ obtiene elementos en cualquiera de los dos conjuntos, pero no en ambos. """
-print(first | second)
+""" print(first | second)
 print(first & second)
 print(first - second)
 print(second - first)
-print(first ^ second)
+print(first ^ second) """
 
 
 """ exercises whit sets """
 
-skills = {'Python', 'HTML', 'SQL', 'C++', 'Java', 'Scala'}
+""" skills = {'Python', 'HTML', 'SQL', 'C++', 'Java', 'Scala'}
 job_skills = {'HTML', 'CSS', 'JS', 'C#', 'NodeJS'}
 
 def coincid(set1, set2):
     return print(list(set1 & set2)[len(list(set1 & set2)) - 1])
 
-coincid(skills, job_skills)
+coincid(skills, job_skills) """
 
+""" start whit list comprhesion """
+
+cubes = [i**3 for i in range(5)]
+
+print(cubes)
+
+evens = [i**2 for i in range(20) if i**2 % 2 == 0]
+
+print(evens)
