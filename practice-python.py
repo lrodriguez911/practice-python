@@ -606,10 +606,28 @@ coincid(skills, job_skills) """
 
 """ start whit list comprhesion """
 
-cubes = [i**3 for i in range(5)]
+""" cubes = [i**3 for i in range(5)]
 
 print(cubes)
 
 evens = [i**2 for i in range(20) if i**2 % 2 == 0]
 
-print(evens)
+print(evens) """
+
+""" create a list of multiples of 3 from 0 to 20 """
+
+""" multiples3 = [i for i in range(20) if i %3 == 0]
+
+print(multiples3) """
+
+""" exercises counter of letter using dictionaries """
+
+text = input()
+dict = {}
+#tu código va aquí
+for i in text:
+    if i not in dict:
+        dict[i] = 1
+    else:
+        dict[i] += 1     
+print(dict) 
