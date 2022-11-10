@@ -622,7 +622,7 @@ print(multiples3) """
 
 """ exercises counter of letter using dictionaries """
 
-text = input()
+'''text = input()
 dict = {}
 #tu código va aquí
 for i in text:
@@ -630,4 +630,17 @@ for i in text:
         dict[i] = 1
     else:
         dict[i] += 1     
-print(dict) 
+print(dict) '''
+
+'''-----------------------------------------'''
+
+
+'''functional programing in python'''
+
+def apply_twice(func, arg):
+    return func(func(arg))
+
+def add_five(x):
+    return x + 5
+
+print(apply_twice(add_five, 10))
