@@ -23,23 +23,46 @@ print(num1 + num2)'''
 '''5) Escribe un programa que pida dos números y escriba en la pantalla cual es el
 mayor.'''
 
-num1 = int(input('ingrese un numero: '))
+'''num1 = int(input('ingrese un numero: '))
 num2 = int(input('ingrese un otro numero: '))
 if num1 > num2:
     print(num1)
 else:
-    print(num2)
+    print(num2)'''
 
 '''6) Escribe un programa que pida 3 números y escriba en la pantalla el mayor de
 los tres.'''
+'''num1 = int(input('insert the first number'))
+num2 = int(input('insert the second number'))
+num3 = int(input('insert the third number'))
+
+if num1 > num2 and num1 > num3:
+    print(num1)
+elif num2 > num1 and num2 > num3:
+    print(num2)
+else:
+    print(num3)'''
+
 
 '''7) Escribe un programa que pida un número y diga si es divisible por 2'''
+
+'''num = int(input('insert a number'))
+if num % 2 == 0:
+    print('is divisible by two')
+else:
+    print('is not divisible by two')'''
+
 
 '''8) Escribe un programa que pida un número y nos diga si es divisible por 2, 3, 5 o
 7 (sólo hay que comprobar si lo es por uno de los cuatro)'''
 
+num = int(input('insert a number'))
+if num % 2 == 0 or num % 3 == 0 or num % 5 == 0 or num % 2 == 7:
+    print('is divisible')
+
 '''9) Añadir al ejercicio anterior que nos diga por cuál de los cuatro es divisible (hay
 que decir todos por los que es divisible)'''
+
 
 '''10) Escribir un programa que escriba en pantalla los divisores de un número dado'''
 
