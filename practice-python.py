@@ -637,10 +637,34 @@ print(dict) '''
 
 '''functional programing in python'''
 
-def apply_twice(func, arg):
+'''def apply_twice(func, arg):
     return func(func(arg))
 
 def add_five(x):
     return x + 5
 
-print(apply_twice(add_five, 10))
+print(apply_twice(add_five, 10))'''
+
+
+#lambdas
+
+def my_func(f, arg):
+    return f(arg)
+
+my_func(lambda x: 2*x*x, 5)
+
+#name function
+def polynomial(x):
+    return x**x + 5*x + 4
+print(polynomial(-4))
+
+#lambda
+print((lambda x: x**2 + 5*x +4) (-4))
+
+#solving a wrongs lambda
+price = int(input())
+perc = int(input())
+
+res = (lambda x,y:x*(y / 100))(price, perc)
+
+print(res)

@@ -62,6 +62,8 @@ if num % 2 == 0 or num % 3 == 0 or num % 5 == 0 or num % 2 == 7:
 
 '''9) Añadir al ejercicio anterior que nos diga por cuál de los cuatro es divisible (hay
 que decir todos por los que es divisible)'''
+num = int(input('insert a number'))
+
 
 
 '''10) Escribir un programa que escriba en pantalla los divisores de un número dado'''
