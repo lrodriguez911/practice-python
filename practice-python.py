@@ -668,3 +668,37 @@ perc = int(input())
 res = (lambda x,y:x*(y / 100))(price, perc)
 
 print(res)
+
+
+#functional programing: map and filter
+
+def add_five(x):
+    return x + 5
+
+nums = [11, 22, 33, 44, 55]
+result = list(map(add_five, nums))
+print(result)
+
+#exercises code coach map
+
+salaries = [2000, 1800, 3100, 4400, 1500]
+bonus = int(input())
+
+print(list(map(lambda x: x + bonus, salaries )))
+
+#filter
+
+nums = [11, 22, 33, 44, 55]
+res = list(filter(lambda x: x%2==0, nums))
+print(res)
+
+#generators
+
+def countdown():
+    i=5
+    while i > 0:
+        yield i
+        i -= 1
+
+for i in countdown():
+    print(i)
