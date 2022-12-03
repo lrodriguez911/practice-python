@@ -732,3 +732,16 @@ def print_text():
 print_text(); """
 
 
+""" def decor(func):
+    def wrap(a):
+        print("***")
+        func(a)
+        print("***")
+        print("END OF PAGE")
+    return wrap
+
+@decor
+def invoice(num):
+    print("INVOICE #" +num)
+
+invoice(input()) """
