@@ -805,3 +805,18 @@ print(res) """
 func(a= 0, zero =8) """
 
 #fill in the blanks
+
+
+
+#Class
+
+
+class Cat:
+    def __init__(self, color, legs):
+        self.color = color
+        self.legs = legs
+
+felix = Cat("ginger", 4)
+rover = Cat("dog-colored", 4)
+Sumpy = Cat("brown", 3)
+        
