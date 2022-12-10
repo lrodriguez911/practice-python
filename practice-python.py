@@ -648,60 +648,60 @@ print(apply_twice(add_five, 10))'''
 
 #lambdas
 
-def my_func(f, arg):
+""" def my_func(f, arg):
     return f(arg)
 
 my_func(lambda x: 2*x*x, 5)
-
+ """
 #name function
-def polynomial(x):
+""" def polynomial(x):
     return x**x + 5*x + 4
-print(polynomial(-4))
+print(polynomial(-4)) """
 
 #lambda
-print((lambda x: x**2 + 5*x +4) (-4))
+""" print((lambda x: x**2 + 5*x +4) (-4)) """
 
 #solving a wrongs lambda
-price = int(input())
+""" price = int(input())
 perc = int(input())
 
 res = (lambda x,y:x*(y / 100))(price, perc)
 
-print(res)
+print(res) """
 
 
 #functional programing: map and filter
 
-def add_five(x):
+""" def add_five(x):
     return x + 5
 
 nums = [11, 22, 33, 44, 55]
 result = list(map(add_five, nums))
 print(result)
-
+ """
 #exercises code coach map
 
-salaries = [2000, 1800, 3100, 4400, 1500]
+""" salaries = [2000, 1800, 3100, 4400, 1500]
 bonus = int(input())
 
-print(list(map(lambda x: x + bonus, salaries )))
+print(list(map(lambda x: x + bonus, salaries ))) """
 
 #filter
 
-nums = [11, 22, 33, 44, 55]
+""" nums = [11, 22, 33, 44, 55]
 res = list(filter(lambda x: x%2==0, nums))
 print(res)
-
+ """
 #generators
 
-def countdown():
+""" def countdown():
     i=5
     while i > 0:
         yield i
         i -= 1
 
 for i in countdown():
-    print(i)
+    print(i) """
 
 
 #Decorators
@@ -820,12 +820,154 @@ spell(txt)
 #Class
 
 
-class Cat:
+# class Cat:
+#     def __init__(self, color, legs):
+#         self.color = color
+#         self.legs = legs
+
+# felix = Cat("ginger", 4)
+# rover = Cat("dog-colored", 4)
+# Sumpy = Cat("brown", 3)
+        
+""" class Cat:
     def __init__(self, color, legs):
         self.color = color
         self.legs = legs
-
-felix = Cat("ginger", 4)
-rover = Cat("dog-colored", 4)
-Sumpy = Cat("brown", 3)
         
+felix = Cat('White', 4)
+print(felix.color)
+
+class Student:
+    def __init__(self, name):
+        self.name = name
+
+test = Student("Bob") """
+
+
+""" class Dog:
+    def __init__(self, name, color):
+        self.name = name
+        self.color = color
+    
+    def bark(self):
+        print("Woof!")
+
+fido = Dog("Fido", "brown")
+print(fido.name)
+fido.bark() """
+
+
+""" class Player:
+    def __init__(self, name, level):
+        self.name = name
+        self.level = level
+
+    def intro(self):
+        print(f'{self.name} (Level {self.level})')
+
+player1 = Player(str(input("Insert your name: ")), str(input("Write your level: ")))
+
+player1.intro() """
+
+
+""" class Student:
+    def __init__(self, name):
+        self.name = name
+    
+    def sayHi(self):
+        print(f"Hi from {self.name}")
+
+s1 = Student("Amy")
+s1.sayHi()
+ """
+
+#inheritance
+
+""" class Animal:
+    def __init__(self, name, color):
+        self.name = name
+        self.color = color
+
+class Cat(Animal):
+    def purr(self):
+        print("Purr...")
+
+class Dog(Animal):
+    def bark(self):
+        print("Woof!")
+
+fido = Dog("Fido", "brown")
+print(fido.color)
+fido.bark() """
+
+""" class Wolf:
+    def __init__(self, name, color):
+        self.name = name
+        self.color = color
+    
+    def bark(self):
+        print("Grr...")
+
+class Dog(Wolf):
+    def bark(self):
+        print("Woof!")
+
+husky = Dog("Max", "white")
+husky.bark() """
+
+""" class A:
+    def method(self):
+        print(1)
+    
+class B(A):
+    def method(self):
+        print(2)
+
+B().method()  result 2 """
+
+""" class A:
+    def spam(self):
+        print(1)
+
+class B(A):
+    def spam(self):
+        print(2)
+        super().spam()
+
+B().spam() """
+
+
+""" class Shape:
+    def __init__(self, w, h):
+        self.width = w
+        self.height = h
+    
+    def area(self):
+        print(f'the area is: {self.width * self.height}')
+
+class Rectangle(Shape):
+    def perimeter(self):
+        print(f'the perimter is: {2*(self.width + self.height)}')
+
+w = int(input("enter width: "))
+h = int(input("enter height: "))
+
+r = Rectangle(w, h)
+r.area()
+r.perimeter()
+ """
+
+""" class Vector2D:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def __add__(self, other):
+        return Vector2D(self.x + other.x, self.y + other.y)
+
+first = Vector2D(5, 7)
+second = Vector2D(3, 9)
+result = first + second
+print(result.x)
+print(result.y)"""
+
