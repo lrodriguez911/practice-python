@@ -1087,3 +1087,43 @@ class Rectangle:
 
 square = Rectangle.new_square(5)
 print(square.calculate_area())
+
+class Person:
+    def __init__(self, name):
+        self.name = name
+    
+    @staticmethod
+    def sayHi(cls):
+        print("Hi")
+
+
+class Pizza:
+    def __init__(self, toppings):
+        self.toppings = toppings
+
+    @staticmethod
+    def validate_toppings(toppings):
+        if toppings == "pineapple":
+            raise ValueError("No pineapples!")
+        else:
+            return True
+
+ingredients = ["cheese", "onions", "spam"]
+if all(Pizza.validate_toppings(i) for i in ingredients):
+    pizza = Pizza(ingredients)
+        
+
+#exercise Define the methods
+class Shape:
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+
+    @staticmethod
+    def area(width, height):
+        return width * height
+
+w = int(input())
+h = int(input())
+
+print(Shape.area(w, h))
