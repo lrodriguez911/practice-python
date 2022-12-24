@@ -1073,7 +1073,7 @@ p.hit()
 p.hit() 
  """
 
-class Rectangle:
+""" class Rectangle:
     def __init__(self, width, height):
         self.width = width
         self.height = height
@@ -1086,18 +1086,18 @@ class Rectangle:
         return cls(side_length, side_length)
 
 square = Rectangle.new_square(5)
-print(square.calculate_area())
+print(square.calculate_area()) """
 
-class Person:
+""" class Person:
     def __init__(self, name):
         self.name = name
     
     @staticmethod
     def sayHi(cls):
-        print("Hi")
+        print("Hi") """
 
 
-class Pizza:
+""" class Pizza:
     def __init__(self, toppings):
         self.toppings = toppings
 
@@ -1110,11 +1110,11 @@ class Pizza:
 
 ingredients = ["cheese", "onions", "spam"]
 if all(Pizza.validate_toppings(i) for i in ingredients):
-    pizza = Pizza(ingredients)
+    pizza = Pizza(ingredients) """
         
 
 #exercise Define the methods
-class Shape:
+""" class Shape:
     def __init__(self, width, height):
         self.width = width
         self.height = height
@@ -1126,4 +1126,114 @@ class Shape:
 w = int(input())
 h = int(input())
 
-print(Shape.area(w, h))
+print(Shape.area(w, h)) """
+
+#Propertys
+
+""" class Pizza:
+    def __init__(self, toppings):
+        self.toppings = toppings
+
+    @property
+    def pineapple_allowed(self):
+        return False
+
+pizza = Pizza(["cheese", "tomato"])
+print(pizza.pineapple_allowed)
+pizza.pineapple_allowed = True """
+ 
+""" class Person:
+    def __init__(self, age):
+        self.age = age
+
+    @property
+    def isAdult(self):
+        if self.age > 18:
+            return True
+        else:
+            return False """
+
+""" class Pizza:
+    def __init__(self, toppings):
+        self.toppings = toppings
+        self._pineapple_allowed = False
+    
+    @property
+    def pineapple_allowed(self):
+        return self._pineapple_allowed
+    
+    @pineapple_allowed.setter
+    def pineapple_allowed(self, value):
+        if value:
+            password = input("Enter the password: ")
+            if password == "Sw0rdf1sh!"
+                self._pineapple_allowed = value
+            else:
+                raise ValueError("Alert! Intruder!")
+
+pizza = Pizza(["cheese", "tomato"])
+print(pizza.pineapple_allowed)
+pizza.pineapple_allowed = True
+print(pizza.pineapple_allowed) """
+
+
+""" class Player:
+    def __init__(self, name, lives):
+        self.name = name
+        self._lives = lives
+
+    def hit(self):
+        self._lives -= 1
+
+    @property
+    def isAlive(self):
+        return self._lives
+
+    @isAlive.setter
+    def isAlive(self, value):
+        if value > 0:
+            return True
+        else:
+            return False
+
+standard_input = 2
+
+p = Player("Cyberpunk77", int(standard_input))
+i = 1
+while i < 5:
+    p.hit()
+    print(f'Hit # {str(i)}')
+    i += 1
+    if not p.isAlive:
+        print("Game Over")
+        break  """
+
+class Enemy:
+    name =""
+    lives = 0
+    def __init__(self, name, lives):
+        self.name = name
+        self.lives = lives
+    
+    def hit(self):
+        self.lives -= 1
+        if self.lives <= 0:
+            print(f'{self.name} killed')
+        else:
+            print(f'{self.name} has {str(self.lives)} lives')
+
+class Monster(Enemy):
+    def __init__(self):
+        super().__init__('Monster', 3)
+
+class Alien(Enemy):
+    def __init__(self):
+        super().__init__('Alien', 5)
+    
+m = Monster()
+a = Alien()
+
+while True:
+    x = input()
+    if x == 'exit':
+        break
