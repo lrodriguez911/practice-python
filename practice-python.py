@@ -1217,9 +1217,9 @@ class Enemy:
     
     def hit(self):
         self.lives -= 1
-        if self.lives <= 0:
+        if self.lives == 0:
             print(f'{self.name} killed')
-        else:
+        elif self.lives >= 1:
             print(f'{self.name} has {str(self.lives)} lives')
 
 class Monster(Enemy):
@@ -1234,6 +1234,10 @@ m = Monster()
 a = Alien()
 
 while True:
-    x = input()
+    x = input("insert accion: ")
+    if x == 'laser':
+        a.hit()    
+    elif x == 'gun':
+        m.hit()  
     if x == 'exit':
         break
