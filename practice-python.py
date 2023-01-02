@@ -1208,7 +1208,7 @@ while i < 5:
         print("Game Over")
         break  """
 
-class Enemy:
+""" class Enemy:
     name =""
     lives = 0
     def __init__(self, name, lives):
@@ -1240,4 +1240,33 @@ while True:
     elif x == 'gun':
         m.hit()  
     if x == 'exit':
-        break
+        break """
+
+
+
+# myfile = open("filename.txt")
+# print(myfile)
+
+#write mode
+# open("filename.txt", "w")
+
+#read mode
+# open("filename.txt", "r")
+# open("filename.txt")
+
+#binary write mode
+# open("filename.txt", "wb")
+
+#after use a file you will be close it
+
+# file = open("filename.txt", "w")
+#do stuff to the file
+# file.close()
+
+
+#reading files
+
+file = open("filename.txt", "r")
+cont = file.read()
+print(cont)
+file.close()
