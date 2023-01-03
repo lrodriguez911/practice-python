@@ -1242,7 +1242,15 @@ while True:
     if x == 'exit':
         break """
 
-
+#Exercises system reg
+""" try:
+    name = str(input())
+    if len(name) >= 4:
+        print("Account Created")
+    else:
+        raise "Invalid Name"
+except:
+    print("Invalid Name") """
 
 # myfile = open("filename.txt")
 # print(myfile)
@@ -1266,7 +1274,37 @@ while True:
 
 #reading files
 
-file = open("filename.txt", "r")
+""" file = open("filename.txt", "r")
 cont = file.read()
 print(cont)
+file.close() """
+
+""" file = open("test.txt")
+cont = file.read()
+print(cont)
+file.close() """
+
+""" file = open("filename.txt")
+print(file.read(1))
+print(file.read(2))
+print(file.read(3))
+file.close() """
+
+""" file = open("filename.txt", "r")
+for i in range(21):
+    print(file.read(4))
+file.close() """
+
+""" file = open("filename.txt")
+
+for line in file.readlines():
+    print(line)
+
+file.close() """
+
+file = open("filename.txt")
+
+for line in file:
+    print(line)
+
 file.close()
