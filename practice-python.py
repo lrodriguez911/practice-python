@@ -1302,7 +1302,7 @@ for line in file.readlines():
 
 file.close() """
 
-file = open("filename.txt")
+"""file = open("filename.txt")
 
 for line in file:
     print(line)
