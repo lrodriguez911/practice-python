@@ -58,19 +58,19 @@ def main():
             if e.type == pg.QUIT:
                 run = False
             if e.type == pg.KEYDOWN:
-                if e.key == pg.K_RIGHT or e.key == pg.K_d:
+                if (e.key == pg.K_RIGHT or e.key == pg.K_d) and snake[0].dir != 1:
                     snake[0].dir = 0
-                if e.key == pg.K_LEFT or e.key == pg.K_a:
+                if (e.key == pg.K_LEFT or e.key == pg.K_a) and snake[0].dir != 0:
                     snake[0].dir = 1
-                if e.key == pg.K_UP or e.key == pg.K_w:
+                if (e.key == pg.K_UP or e.key == pg.K_w) and snake[0].dir != 3:
                     snake[0].dir = 2
-                if e.key == pg.K_DOWN or e.key == pg.K_s:
+                if (e.key == pg.K_DOWN or e.key == pg.K_s) and snake[0].dir != 2:
                     snake[0].dir = 3
                 
         snake[0].move()
         refresh(window)
         pg.display.update()
-        pg.time.delay(200)
+        pg.time.delay(100)
         if snake[0].x == food.x and snake[0].y == food.y:
             food.newFood()
             snake.append(Body(window))

@@ -1308,3 +1308,65 @@ for line in file:
     print(line)
 
 file.close()
+
+f = open("numbers.txt", "r")
+print(f.read())
+f.close() """
+
+#using try and finally to avoid is error and get finally close that file
+""" try:
+    f = open("newfile.txt")
+    cont = f.read()
+    print(cont)
+finally:
+    f.close() """
+
+#using declaration whit
+""" with open("newfile.txt") as f:
+    print(f.read()) """
+
+
+#Exercises book club
+""" with open("filename.txt") as f:
+    line = 1
+    for i in f.readlines():
+        print(f'Line {line}: {len(i.split())} words')
+        line += 1 """
+
+#test module 5
+#open in write binary
+""" open("test.txt", "wb") """
+
+""" try:
+    with open("test.txt") as f:
+        print(f.read())
+except:
+    print("Error") """
+
+
+""" f = open("records.txt", "r")
+cont = f.read()
+print(len(cont))
+f.close() """
+
+#whats return mehtod readlines: answer is a list
+
+
+#what mode use to open a file exist and add content
+#answer: a
+
+file = open("filename.txt", "r+")
+letters = []
+for i in file.readlines():
+    new = "".join([word[0] for word in i.split()])
+    print(new) 
+    letters.append(new) 
+print(letters)
+for i in letters:
+    file.write(f'{i}\n')
+file.close()
+""" filea = open("filename.txt", "a")
+for i in letters:
+    filea.write(i)
+print(filea)
+filea.close() """
