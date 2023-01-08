@@ -1355,18 +1355,12 @@ f.close() """
 #what mode use to open a file exist and add content
 #answer: a
 
-file = open("filename.txt", "r+")
-letters = []
-for i in file.readlines():
-    new = "".join([word[0] for word in i.split()])
-    print(new) 
-    letters.append(new) 
-print(letters)
-for i in letters:
-    file.write(f'{i}\n')
+file = open("filename.txt", "r")
+init = ''
+for l in file.readlines():
+    for word in l.split():
+        init += word[0]
+    print(init)
+    init = ""
 file.close()
-""" filea = open("filename.txt", "a")
-for i in letters:
-    filea.write(i)
-print(filea)
-filea.close() """
+    
