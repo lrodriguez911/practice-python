@@ -53,7 +53,7 @@ for n in x:
 
 #color orders in brown, blue, green and black
 
-data = [[23, 11, 5, 14], 
+""" data = [[23, 11, 5, 14], 
 [8, 32, 20, 5]]
 
 color = 'blue'
@@ -71,5 +71,21 @@ elif color == 'green':
     print(int((result / total)* 100 ))
 else:
     result = data[0][3] + data[1][3]
-    print(int((result / total)* 100 ))
+    print(int((result / total)* 100 )) """
 
+#elegants houses
+""" prices = [125000, 78000, 110000, 65000, 300000, 250000, 210000, 150000, 165000, 140000, 125000, 85000, 90000, 128000, 230000, 225000, 100000, 300000] """
+#tu código va aquí
+""" print(sum(prices) / len(prices))
+result = [i for i in prices if i > (sum(prices) / len(prices))]
+print(len(result)) """
+#exercises list methods
+""" x = [8, 5, 42, 11, 20, 4]
+x.sort()
+print(max(x)-min(x)+x[2]) """
+
+
+#pest control
+c = 10
+N = 12
+print([N*2**i for i in range(12)])
