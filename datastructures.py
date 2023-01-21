@@ -134,3 +134,29 @@ else:
 
 
 #tuples
+""" words = ("spam", "eggs", "sausages")
+print(words[0]) """
+
+#diferents data structures
+#list 
+# list = ["one", "two"]
+# dictionary
+# dict =  {1: "one", 2: "two"}
+#tuple
+#tup = ("one", "two")
+
+""" dict = {
+    ("David", 42): "red",
+    ("Bob", 24): "green"
+}
+
+print(dict[("David", 42)])
+print(dict[("Bob", 24)]) """
+
+#tuple unpacking
+
+numbers = (1,2,3)
+a, b, c = numbers
+print(a)
+print(b)
+print(c)
