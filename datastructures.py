@@ -86,6 +86,51 @@ print(max(x)-min(x)+x[2]) """
 
 
 #pest control
-c = 10
+""" c = 10
 N = 12
 print([N*2**i for i in range(12)])
+ """
+
+
+# using dictionaries
+
+""" nums = {
+    1: "one",
+    2: "two",
+    3: "three"
+}
+print(1 in nums)
+print('two' in nums)
+print('two' not in nums) """
+
+
+""" pairs = {
+    1: "apple",
+    "orange": [2,3,4],
+    True: False,
+    12 : "True"
+}
+
+print(pairs.get(1))
+print(pairs.get("orange"))
+
+print(pairs.get(7,42))
+print(pairs.get(12345, "not found")) """
+
+#Exercises Fuzzy Search
+
+""" contacts = {
+    "David": ["123-321-88","david@test.com"],
+    "James": ["241-873-093","james@test.com"],
+    "Bob": ["987-004-322","bob@test.com"],
+    "Amy": ["340-999-213","a@test.com"]
+}
+
+contact = input()
+if contact in contacts:
+    print(contacts.get(contact)[1])
+else:
+    print("Not found") """
+
+
+#tuples
