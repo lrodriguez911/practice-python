@@ -1,3 +1,4 @@
+import math
 #exercise how many vowels
 """ word = str("hellou")
 vowels = ["a","e","i","o", "u"]
@@ -155,8 +156,29 @@ print(dict[("Bob", 24)]) """
 
 #tuple unpacking
 
-numbers = (1,2,3)
+""" numbers = (1,2,3)
 a, b, c = numbers
 print(a)
 print(b)
-print(c)
+print(c) """
+
+
+#Exercises Mapping
+points = [
+    (12, 55),
+    (880, 123),
+    (64, 64),
+    (190, 1024),
+    (77, 33),
+    (42, 11),
+    (0, 90)
+]
+list = []
+for i in points:
+    x, y = i
+    list.append(math.sqrt(pow(x, 2)+ pow(y, 2)))
+
+list.sort()
+print(list[0])
+
+print(list)
