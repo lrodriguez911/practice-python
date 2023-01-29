@@ -164,7 +164,7 @@ print(c) """
 
 
 #Exercises Mapping
-points = [
+""" points = [
     (12, 55),
     (880, 123),
     (64, 64),
@@ -181,4 +181,44 @@ for i in points:
 list.sort()
 print(list[0])
 
-print(list)
+print(list) """
+
+""" a,b,c,d, *e,f,g = range(20)
+
+print(len(e)) """
+
+#Sets
+
+""" num_set = {1, 2, 3, 4, 5}
+print(3 in num_set) 
+
+letters = {"a", "b", "c", "d"}
+if "e" not in letters:
+    print(1)
+else:
+    print(2) """
+
+
+""" nums = {1,2,1,3,1,4,5,6}
+print(nums)
+nums.add(-7)
+nums.remove(3)
+print(nums) """
+
+""" first = {1,2,3,4,5,6}
+second = {4,5,6,7,8,9}
+
+print(first | second)
+print(first & second)
+print(first - second)
+print(second - first)
+print(first ^ second)
+ """
+
+#exewrcises words in common
+""" s1 = "this is some text"
+s2 = "I would like this tea some cookies"
+
+set1 = set(s1.split())
+set2 = set(s2.split())
+print(len(set1 & set2)) """
