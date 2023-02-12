@@ -222,3 +222,56 @@ s2 = "I would like this tea some cookies"
 set1 = set(s1.split())
 set2 = set(s2.split())
 print(len(set1 & set2)) """
+
+
+# Stack
+
+""" class Stack:
+    def __init__(self):
+        self.items = []  
+  
+    def is_empty(self):
+        return self.items == []
+  
+    def push(self, item):
+        self.items.insert(0, item)
+    
+    def pop(self):
+        return self.items.pop(0)
+    
+    def print_stack(self):
+        print(self.items)
+    
+s = Stack()
+s.push('a')
+s.push('b')
+s.push('c')
+s.print_stack()
+
+s.pop()
+s.print_stack() """
+
+#exercise with stack
+#come back
+
+class Browser:
+    def __init__(self):
+      self.links = []  
+  
+    def is_empty(self):
+      return self.links == []
+  
+    def push(self, link):
+      self.links.insert(0, link)
+    def pop(self):
+      return self.links.pop(0)
+    
+  
+x = Browser()
+x.push('about:blank')
+x.push('www.sololearn.com')
+x.push('www.sololearn.com/courses/')
+x.push('www.sololearn.com/courses/python/')
+
+while not x.is_empty():
+    print(x.pop())
