@@ -379,4 +379,48 @@ p.add("believe")
 #your code goes here
 #your code goes here
 """ while n != None: """
-print(p.head.title)
+print(p.head.next.next.next.title)
+
+n = p.head
+while n != None:
+    print(n.title)
+    n = n.next
+    
+    
+# Graph
+
+class Graph():
+    def __init__(self, size) -> None:
+        self.adj = [ [0] * size for i in range(size)]
+        self.size = size
+    
+    def add_edge(self, orig, dest):
+        if orig > self.size or dest > self.size or orig < 0 or dest < 0:
+            print("Invalid Edge")
+        else:
+            self.adj[orig-1][dest-1] = 1
+            self.adj[dest-1][orig-1] = 1
+    
+    def remove_edge(self, orig, dest):
+        if orig > self.size or dest > self.size or orig < 0 or dest < 0:
+            print("Invalid Edge")
+        else:
+            self.adj[orig-1][dest-1] = 0
+            self.adj[dest-1][orig-1] = 0
+    
+    def display(self):
+        for row in self.adj:
+            print()
+            for val in row:
+                print(f'{val: <4}', end="")
+        
+G = Graph(4)
+G.add_edge(1, 1)
+G.add_edge(1, 2)
+G.add_edge(1, 3)
+G.add_edge(2, 2)
+G.add_edge(3, 3)
+G.add_edge(4, 4)
+G.display()
+
+# Exercises Lets Connect
