@@ -254,7 +254,7 @@ s.print_stack() """
 #exercise with stack
 #come back
 
-class Browser:
+""" class Browser:
     def __init__(self):
       self.links = []  
   
@@ -274,12 +274,12 @@ x.push('www.sololearn.com/courses/')
 x.push('www.sololearn.com/courses/python/')
 
 while not x.is_empty():
-    print(x.pop())
+    print(x.pop()) """
 
 
 #Queue
 
-class Queue:
+""" class Queue:
     def __init__(self):
       self.items = []
 
@@ -293,12 +293,12 @@ class Queue:
        return self.items.pop()
     
     def print_queue(self):
-       print(self.items)
+       print(self.items) """
    
 
 #Linked List
 
-class Node:
+""" class Node:
     def __init__(self, data, next):
        self.data = data
        self.next = next
@@ -341,11 +341,11 @@ s.add_at_end(8)
 s.add_at_front(9)
 
 s.print_list()
-print(s.get_last_node())
+print(s.get_last_node()) """
 
             
 # Exercises Name that tune
-
+""" 
 class Track:
     def __init__(self, title, next):
         self.title = title
@@ -366,30 +366,31 @@ class Player:
 
 
 p = Player()
-""" while True:
+    while True:
     x = input()
     if x == 'end':
         break
-    p.add(x) """
+    p.add(x) 
 
 p.add("bib")
 p.add("myg")
 p.add("lc")
-p.add("believe")
+p.add("believe") """
+
+
 #your code goes here
-#your code goes here
-""" while n != None: """
-print(p.head.next.next.next.title)
+
+""" print(p.head.next.next.next.title)
 
 n = p.head
 while n != None:
     print(n.title)
-    n = n.next
+    n = n.next """
     
     
 # Graph
 
-class Graph():
+""" class Graph():
     def __init__(self, size) -> None:
         self.adj = [ [0] * size for i in range(size)]
         self.size = size
@@ -422,5 +423,43 @@ G.add_edge(2, 2)
 G.add_edge(3, 3)
 G.add_edge(4, 4)
 G.display()
+ """
+# Exercises Lets Connect 
 
-# Exercises Lets Connect
+class X():
+    def __init__(self, size) -> None:
+        self.adj = [ [0] * size for i in range(size)]
+        self.size = size
+        
+    def add_friend(self, x, y):
+        if x > self.size or y > self.size or x < 0 or y < 0:
+            print("Error")
+        else:
+            self.adj[x-1][y-1] = 1
+            self.adj[y-1][x-1] = 1
+    
+    def remove_friend(self, x, y):
+        if x > self.size or y > self.size or x < 0 or y < 0:
+            print("Error")
+        else:
+            self.adj[x-1][y-1] = 0
+            self.adj[y-1][x-1] = 0
+            
+
+x = X(5)
+
+x.add_friend(1, 3)
+x.add_friend(1, 5)
+x.add_friend(2, 5)
+x.add_friend(2, 4)
+x.add_friend(4, 5)
+
+n = 2
+
+#my solving is:
+result = 0
+for edge in x.adj[n-1]:
+    if edge == 1:
+        result += 1
+        
+print(result)
